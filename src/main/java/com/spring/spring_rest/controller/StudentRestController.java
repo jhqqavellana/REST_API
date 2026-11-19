@@ -64,16 +64,10 @@ public class StudentRestController {
     return ResponseEntity.ok(studentDto);
   }
 
-
 @DeleteMapping("{id}")
   public ResponseEntity<String> deleteStudentById(@PathVariable Long id) {
     studentService.deleteStudentById(id);
     return ResponseEntity.ok("Student deleted successfully!");
   }
-
-
-
-
-
 
 }
