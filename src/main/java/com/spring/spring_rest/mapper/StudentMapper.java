@@ -1,6 +1,5 @@
 package com.spring.spring_rest.mapper;
 
-import com.spring.spring_rest.controller.StudentExceptionHandler;
 import com.spring.spring_rest.dto.StudentDto;
 import com.spring.spring_rest.entity.Student;
 
@@ -11,7 +10,7 @@ public class StudentMapper {
                           theStudent.getLastName(), theStudent.getEmail());
   }
 
-  public static Student maptoStudent(StudentDto theStudentDto){
+  public static Student mapToStudent(StudentDto theStudentDto){
     return new Student(theStudentDto.getId(), theStudentDto.getFirstName(),
                         theStudentDto.getLastName(), theStudentDto.getEmail());
   }
